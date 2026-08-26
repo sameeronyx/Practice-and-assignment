@@ -356,36 +356,36 @@
 
 // ElectriCity Bill + Discount 
 
-// var units = 200;
-// var bill = 0;
-// var Discount;
-// var final_bill;
+var units = 200;
+var bill = 0;
+var Discount;
+var final_bill;
 
 
-// if (units > 0 && units <= 100) {
-//     bill = (units * 5);
+if (units > 0 && units <= 100) {
+    bill = (units * 5);
 
-// } else if (units > 100 & units <= 200) {
-//     bill = (units * 5) + ((units - 100) * 7);
+} else if (units > 100 & units <= 200) {
+    bill = (units * 5) + ((units - 100) * 7);
 
-// } else {
-//     bill = (units * 5) + ((units - 200) * 10)
-// }
-// console.log("units :", units);
-// console.log("original bill", bill);
+} else {
+    bill = (units * 5) + ((units - 200) * 10)
+}
+console.log("units :", units);
+console.log("original bill", bill);
 
-// if (bill >= 2000) {
-//     Discount = bill * 10 / 100;
+if (bill >= 2000) {
+    Discount = bill * 10 / 100;
 
-// } else {
-//     Discount = 0 ;
+} else {
+    Discount = 0 ;
 
 
-// }
-// console.log("discount",Discount);
-// final_bill = bill - Discount;
+}
+console.log("discount",Discount);
+final_bill = bill - Discount;
 
-// console.log("total bill:", final_bill);
+console.log("total bill:", final_bill);
 
 
 
