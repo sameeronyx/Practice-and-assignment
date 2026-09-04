@@ -153,3 +153,55 @@
 // console.log(newUser);
 
 
+// section-4 reduce() and Accumulator Pattern 
+
+//  Calculate the Total Cart Price
+
+// let itemPrice = [100,560,240];
+
+// const totalBill = itemPrice.reduce((acc , cv) => acc+cv ,0);
+// console.log(totalBill);
+
+
+// Count Total Products
+
+// let Products = ["Laptop", "Mouse", "Keyboard"];
+
+// const totalItem = Products.reduce((acc, cv)=> acc+1,0)
+// console.log(totalItem);
+
+
+
+//  Calculate Total Order Amount
+
+// let Prices = [
+//     { amount: 200 },
+//     { amount: 270 },
+//     { amount: 280 }
+// ]
+
+// const totalBill = Prices.reduce((acc , cv ) => acc+cv.amount ,0);
+// console.log(totalBill);
+
+
+
+//  Create a Comma-Separated String
+
+// let arr1 = ["HTML", "CSS", "JavaScript"];
+// const arr2 = arr1.reduce((acc, cv) => acc + "," + cv )
+// console.log(arr2);
+
+//  Calculate Final Cart Total
+
+// let arr1 = [
+//     { name: "Mouse", price: 500, quantity: 2 },
+//     { name: "Keyboard", price: 1000, quantity: 1 }
+// ];
+// const arr2 = arr1.reduce((acc,cv)=> acc+cv.price*cv.quantity , 0);
+// console.log(arr2);
+
+
+//finish 
+
+
+
