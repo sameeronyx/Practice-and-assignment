@@ -61,6 +61,87 @@
 // })
 
 
+// section -3 Removing and cntrolling events
+
+// 7. remove an Event listner 
+
+// const revealBtn = document.querySelector("#reveal-btn");
+//  const revealMsg = document.querySelector("#reveal-msg")
+
+// revealBtn.addEventListener("click", ()=>{
+//     revealMsg.textContent ="";
+     
+// })
+
+// revealBtn.removeEventListener("click",'revealMsg');
+
+
+//8. run an Event Only once 
+
+//  const revealBtn = document.querySelector("#reveal-btn");
+ 
+
+// revealBtn.addEventListener("click", ()=>{
+
+
+// console.log(document.querySelector("#reveal-msg").textContent ="hi");
+// } ,{once:true});
+
+
+
+//9.Stop Event Propogation 
+
+// const eventProp = document.querySelector("#eventpropogation");
+// const eventPropBtn = document.querySelector("#eventpropogationBtn");
+
+// eventProp.addEventListener("click",()=>{
+//     console.log("parent");
+    
+// });
+
+// eventPropBtn.addEventListener("click",(e)=>{
+//     e.stopPropagation()
+
+//     console.log("child");
+    
+// })
+
+
+// section-4 Bubbling ,capturing & default actions
+
+// 10 . demonstrate event capturing
+
+const eventProp = document.querySelector("#eventpropogation");
+const eventPropBtn = document.querySelector("#eventpropogationBtn");
+
+eventPropBtn.addEventListener("click",(e)=>{
+    //e.stopPropagation()
+
+    console.log("child");
+    
+})
+
+eventProp.addEventListener("click",()=>{
+    console.log("parent");
+    
+},{capture});
+
+
+
+// section-5 Event deligation 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
