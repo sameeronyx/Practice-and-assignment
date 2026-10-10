@@ -111,24 +111,38 @@
 
 // 10 . demonstrate event capturing
 
-const eventProp = document.querySelector("#eventpropogation");
-const eventPropBtn = document.querySelector("#eventpropogationBtn");
+// const eventProp = document.querySelector("#eventpropogation");
+// const eventPropBtn = document.querySelector("#eventpropogationBtn");
 
-eventPropBtn.addEventListener("click",(e)=>{
-    //e.stopPropagation()
+// eventPropBtn.addEventListener("click",(e)=>{
+//     //e.stopPropagation()
 
-    console.log("child");
+//     console.log("child");
     
-})
+// })
 
-eventProp.addEventListener("click",()=>{
-    console.log("parent");
+// eventProp.addEventListener("click",()=>{
+//     console.log("parent");
     
-},{capture});
+// },{capture});
 
 
 
 // section-5 Event deligation 
+
+// 12.  Handle Multiple Buttons Using Event Delegation 
+
+// const langButton = document.querySelector("#langsbuttons");
+
+// langButton.addEventListener("click",(e)=>{
+//     e.preventDefault();
+
+//     if(e.target.tagName === "BUTTON"){
+
+//         document.querySelector("#langMsg").textContent =e.target.textContent
+//     }
+    
+// })
 
 
 
